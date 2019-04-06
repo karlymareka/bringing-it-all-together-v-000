@@ -58,9 +58,9 @@ attr_accessor :name, :breed, :id
     if !dog.empty? && dog != nil 
       dog_info_hash = {:id => dog_info[0], :name => dog_info[1], :breed => dog_info[2]}
       dog = Dog.new(dog_info_hash)
-    else 
-      dog = dog.create(dog_info_hash)
+    else
       binding.pry 
+      dog = dog.create(dog_info_hash)
     end
     dog 
   end 
