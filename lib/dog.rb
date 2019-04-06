@@ -53,6 +53,7 @@ attr_accessor :name, :breed, :id
   end
   
   def self.find_or_create_by(dog_info)
+    binding.pry 
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     dog = DB[:conn].execute(sql, dog_info[:name], dog_info[:breed])[0]
     if dog != nil 
