@@ -87,5 +87,4 @@ attr_accessor :name, :breed, :id
           WHERE id = ?"
     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end 
-  end 
 end 
