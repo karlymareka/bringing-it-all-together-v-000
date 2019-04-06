@@ -72,7 +72,7 @@ attr_accessor :name, :breed, :id
   def self.find_by_name(name)
          sql = <<-SQL
       SELECT *
-      FROM students
+      FROM dogs
       WHERE name = ?
       LIMIT 1
     SQL
