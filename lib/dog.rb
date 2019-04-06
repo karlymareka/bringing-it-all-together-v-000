@@ -67,5 +67,7 @@ attr_accessor :name, :breed, :id
   def self.new_from_db(dog)
     dog_info = {:id => dog[0], :name => dog[1], :breed => dog[2]}
     new_dog = Dog.new(dog_info) 
-  end 
+  end
+  
+  def self.find_by_name(name)
 end 
