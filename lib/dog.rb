@@ -82,4 +82,7 @@ attr_accessor :name, :breed, :id
     end.first
   end
   
+  def self.update
+    
+  end 
 end 
