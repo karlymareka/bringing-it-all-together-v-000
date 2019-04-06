@@ -62,5 +62,9 @@ attr_accessor :name, :breed, :id
       dog = Dog.create(dog_info)
     end
     return dog 
+  end
+  
+  def new_from_db
+    
   end 
 end 
