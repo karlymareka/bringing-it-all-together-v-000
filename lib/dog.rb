@@ -64,7 +64,7 @@ attr_accessor :name, :breed, :id
     return dog 
   end
   
-  def new_from_db
-    
+  def new_from_db(dog)
+    binding.pry 
   end 
 end 
