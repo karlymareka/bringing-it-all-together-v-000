@@ -55,7 +55,6 @@ attr_accessor :name, :breed, :id
   def self.find_or_create_by(dog_info)
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     dog = DB[:conn].execute(sql, dog_info[:name], dog_info[:breed])[0]
-    binding.pry 
     if dog != nil
       dog_info[:id] = dog[0]
       binding.pry 
