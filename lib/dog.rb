@@ -58,6 +58,7 @@ attr_accessor :name, :breed, :id
     binding.pry 
     if dog != nil
       dog_info[:id] = dog[0]
+      binding.pry 
       dog = Dog.new(dog)
     else
       dog = Dog.create(dog_info)
