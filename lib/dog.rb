@@ -65,6 +65,6 @@ attr_accessor :name, :breed, :id
   end
   
   def self.new_from_db(dog)
-    binding.pry 
+    new_dog = Dog.new 
   end 
 end 
