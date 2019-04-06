@@ -62,6 +62,6 @@ attr_accessor :name, :breed, :id
       dog = Dog.create(dog_info)
       return dog 
     end
-    dog 
+    
   end 
 end 
