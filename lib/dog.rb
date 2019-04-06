@@ -56,7 +56,7 @@ attr_accessor :name, :breed, :id
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     dog = DB[:conn].execute(sql, dog_info[:name], dog_info[:breed])[0]
     if !dog.empty?
-      dog_info = dog
+      dog_info_hash = {:id => dog_info[0], :name => dog_info[1], :breed => dog_info[2]}
       dog = Dog.new({:id => dog_info[0], :name => dog_info[1], :breed => dog_info[2])
     else 
       dog = dog.create 
