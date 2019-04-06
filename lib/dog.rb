@@ -57,11 +57,9 @@ attr_accessor :name, :breed, :id
     dog = DB[:conn].execute(sql, dog_info[:name], dog_info[:breed])[0]
     if dog != nil 
       dog = Dog.new(dog_info)
-      return dog 
     else
       dog = Dog.create(dog_info)
-      return dog 
     end
-    
+    return dog 
   end 
 end 
