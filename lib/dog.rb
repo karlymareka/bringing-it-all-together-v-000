@@ -59,7 +59,7 @@ attr_accessor :name, :breed, :id
       dog = Dog.new(dog_info)
       binding.pry 
     else
-      dog = self.create(dog_info_hash)
+      dog = self.create(dog_info)
     end
     dog 
   end 
