@@ -70,4 +70,5 @@ attr_accessor :name, :breed, :id
   end
   
   def self.find_by_name(name)
+    
 end 
