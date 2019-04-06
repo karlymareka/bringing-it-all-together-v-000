@@ -57,7 +57,7 @@ attr_accessor :name, :breed, :id
     dog = DB[:conn].execute(sql, dog_info[:name], dog_info[:breed])[0]
     binding.pry 
     if dog != nil
-      dog_info[:id]
+      dog_info[:id] = dog[0]
       dog = Dog.new(dog)
     else
       dog = Dog.create(dog_info)
